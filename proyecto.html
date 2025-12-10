@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mike Mentzer - Filosofía Heavy Duty</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        padding: 40px 20px;
+        /* Imagen de fondo */
+        background: url('fondo-gym.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 50px;
+        color: #ff3d00;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+    }
+
+    .contenedor {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .seccion {
+        background: rgba(255,255,255,0.95);
+        padding: 30px 25px;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .seccion::before {
+        content: '';
+        position: absolute;
+        top: -50px; left: -50px;
+        width: 200px; height: 200px;
+        background: rgba(255, 61, 0, 0.1);
+        transform: rotate(45deg);
+        z-index: 0;
+    }
+
+    .seccion:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    }
+
+    .seccion * { position: relative; z-index: 1; }
+
+    .seccion h2 {
+        text-align: center;
+        color: #ff3d00;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+    }
+
+    .texto-destacado {
+        font-weight: 700;
+        color: #0077b6;
+        font-size: 1.4em;
+        text-align: center;
+        margin-bottom: 15px;
+        border-bottom: 4px solid #00b4d8;
+        display: inline-block;
+        padding-bottom: 6px;
+    }
+
+    p {
+        font-size: 1.05em;
+        color: #555;
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+
+    .resaltado {
+        background-color: #fffb6a;
+        padding: 0 4px;
+        border-radius: 2px;
+    }
+
+    .imagen-mov {
+        width: 220px;
+        display: block;
+        margin: 20px auto;
+        border-radius: 15px;
+        animation: moverImagen 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes moverImagen {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(40px); }
+    }
+
+    video {
+        display: block;
+        margin: 20px auto;
+        width: 320px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        border: 3px solid #00b4d8;
+    }
+
+    .links img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .links img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .texto-mov {
+        text-align: center;
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #0077b6;
+        animation: moverTexto 6s ease-in-out infinite alternate;
+        margin-bottom: 20px;
+    }
+
+    @keyframes moverTexto {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(25px); }
+    }
+
+    @media(max-width: 768px){
+        .imagen-mov { width: 180px; }
+        video { width: 260px; }
+    }
+
+</style>
+</head>
+<body>
+
+<h1> Mike Mentzer - Heavy Duty </h1>
+
+<div class="contenedor">
+
+    <!-- INICIO AMPLIADO -->
+    <div class="seccion">
+        <div class="texto-destacado">Inicio – Filosofía Heavy Duty</div>
+        <p>
+            Para <span class="resaltado">Mike Mentzer</span>, cada entrenamiento debía tener un propósito claro y bien definido,
+            donde cada repetición contribuyera al crecimiento muscular real y medible. Su filosofía se fundamentaba en
+            la eficiencia, buscando el máximo estímulo con el mínimo tiempo y esfuerzo. Mentzer creía que entrenar demasiado
+            podía ser contraproducente y que el descanso era parte integral del progreso. La disciplina, la planificación
+            y la lógica eran esenciales para alcanzar resultados sostenibles. Cada serie se realizaba con concentración,
+            asegurando que el esfuerzo fuera absoluto y consciente.
+        </p>
+    </div>
+
+    <!-- TEXTO MOTIVACIONAL -->
+    <div class="seccion texto-mov">
+        ¡Entrena intenso, descansa lo necesario y progresa siempre!
+    </div>
+
+    <!-- FILOSOFÍA -->
+    <div class="seccion">
+        <div class="texto-destacado">Filosofía de Mentzer</div>
+        <p>
+            Mentzer enseñaba que entrenar más no significaba entrenar mejor. Su enfoque se basaba en
+            <span class="resaltado">brevedad, intensidad y recuperación adecuada</span>. Cada serie debía ser
+            ejecutada con un esfuerzo máximo, llegando al fallo muscular momentáneo.
+        </p>
+        <p>
+            La claridad mental también formaba parte de su método, influenciado por el objetivismo: decisiones
+            racionales, planificación inteligente y honestidad con el propio progreso.
+        </p>
+    </div>
+
+    <!-- IMAGEN -->
+    <img src="gym1.jpg" class="imagen-mov" alt="Mike Mentzer Entrenando">
+
+    <!-- PROPOSITO AMPLIADO -->
+    <div class="seccion">
+        <div class="texto-destacado">El Propósito del Heavy Duty</div>
+        <p>
+            El objetivo central del método <span class="resaltado">Heavy Duty</span> es lograr el máximo desarrollo muscular
+            mediante el mínimo volumen de entrenamiento posible. Mentzer enfatizaba que largas horas en el gimnasio no
+            eran necesarias; lo crucial era que cada serie alcanzara el fallo total con técnica perfecta. El estímulo
+            generado debía ser suficiente para desencadenar un crecimiento significativo, respetando los límites
+            fisiológicos de cada individuo. Este enfoque permite progresar sin riesgo de sobreentrenamiento ni fatiga
+            excesiva. La combinación de intensidad controlada y descanso adecuado asegura resultados sostenibles
+            y medibles.
+        </p>
+    </div>
+
+    <!-- MIKE MENTZER -->
+    <div class="seccion">
+        <div class="texto-destacado">Mike Mentzer: Intensidad Máxima</div>
+        <p>
+            <span class="resaltado">Mike Mentzer</span> revolucionó el culturismo con su método Heavy Duty,
+            demostrando que pocas series al fallo eran más efectivas que largas rutinas llenas de volumen.
+        </p>
+        <p>
+            Sus técnicas incluían negativas, descanso-pausa y repeticiones forzadas, aplicadas solo cuando se dominaba
+            la ejecución perfecta.
+        </p>
+    </div>
+
+    <!-- LEGADO AMPLIADO -->
+    <div class="seccion">
+        <div class="texto-destacado">Legado y Enseñanzas</div>
+        <p>
+            El legado de <span class="resaltado">Mike Mentzer</span> sigue vivo en atletas y culturistas que buscan
+            entrenar de manera inteligente, con eficiencia y respeto a la fisiología humana. Sus principios muestran
+            que el crecimiento real ocurre durante la recuperación, no únicamente en el gimnasio. La intensidad máxima,
+            combinada con descanso suficiente, permite avances consistentes y evita lesiones. Mentzer también promovía
+            la autodisciplina, la planificación y la evaluación objetiva del progreso. Su enseñanza central es clara:
+            entrenar duro no significa entrenar más, sino entrenar mejor y con propósito.
+        </p>
+    </div>
+
+    <!-- VIDEO -->
+    <video controls>
+        <source src="video-gym.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+
+    <!-- BENEFICIOS -->
+    <div class="seccion">
+        <div class="texto-destacado">Beneficios del Enfoque Heavy Duty</div>
+        <p>
+            Entrenar con alta intensidad y baja frecuencia reduce el desgaste, mejora la recuperación y permite
+            avances constantes en fuerza y desarrollo muscular.
+        </p>
+        <p>
+            <span class="resaltado">Menos es más</span>: siempre y cuando el esfuerzo sea máximo, preciso y consciente.
+        </p>
+    </div>
+
+    <!-- FINAL -->
+    <div class="seccion">
+        <div class="texto-destacado">Cierre – El Camino de la Intensidad</div>
+        <p>
+            <span class="resaltado">La excelencia requiere estrategia</span>. Heavy Duty no es solo un método,
+            es un compromiso con la eficiencia, la lógica y la mejora continua.
+        </p>
+        <p>
+            Recuerda siempre la enseñanza de Mentzer: “Entrena duro, pero entrena inteligentemente”.
+        </p>
+    </div>
+
+    <!-- ENLACES -->
+    <div class="seccion links">
+        <h2>Enlaces relacionados a Heavy Duty</h2>
+        <img src="gym2.gif" usemap="#gymmap" alt="Enlaces Heavy Duty">
+        <map name="gymmap">
+            <area shape="rect" coords="10,20,140,180" href="https://www.menshealth.com/es/fitness/a65897178/culturista-revolucionario-mike-mentzer-metodo" alt="Sitio de Mentzer">
+            <area shape="rect" coords="150,20,270,180" href="https://es.wikipedia.org/wiki/Mike_Mentzer" alt="Heavy Duty Info">
+        </map>
+    </div>
+
+</div>
+
+</body>
+</html>

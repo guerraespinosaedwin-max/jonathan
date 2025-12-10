@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario 3 - Opinión Heavy Duty</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to bottom, #f0f0f5, #d9e4f5);
+        padding: 40px 20px;
+        color: #333;
+    }
+
+    h2 {
+        text-align: center;
+        color: #e60026;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        margin-bottom: 30px;
+    }
+
+    .form-box {
+        max-width: 600px;
+        margin: auto;
+        background: rgba(255,255,255,0.95);
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        animation: fadeIn 1s ease;
+        transition: transform 0.3s ease;
+    }
+
+    .form-box:hover {
+        transform: translateY(-5px);
+    }
+
+    @keyframes fadeIn {
+        from {opacity:0; transform: translateY(20px);}
+        to {opacity:1; transform: translateY(0);}
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        resize: vertical;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 48%;
+        background: #e60026;
+        color: white;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+        background: #a2001b;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .resaltado {
+        background-color: #fff176;
+        padding: 0 4px;
+        border-radius: 2px;
+    }
+</style>
+</head>
+<body>
+
+<h2>Formulario 3 - Opinión sobre la Filosofía Heavy Duty</h2>
+
+<div class="form-box">
+<form action="mailto:molarhernandezjonathan@gmail.com" method="post" enctype="text/plain">
+
+    <label>Mi reflexión sobre el método de Mike Mentzer:</label>
+    <textarea name="OpinionMentzer" cols="30" rows="6">Comparte tu experiencia aplicando la intensidad, el fallo muscular y la recuperación profunda del sistema Heavy Duty.</textarea>
+
+    <div class="center">
+        <input type="submit" value="Enviar Opinión">
+        <input type="reset" value="Borrar">
+    </div>
+
+</form>
+</div>
+
+</body>
+</html>

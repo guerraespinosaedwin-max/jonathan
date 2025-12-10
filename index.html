@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Menú Principal - Estilo Tarjetas</title>
+<style>
+    /* Fondo y tipografía */
+    body {
+        background: linear-gradient(to right, #ece9e6, #ffffff);
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 50px;
+        font-size: 2.5em;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+
+    /* Contenedor de tarjetas */
+    .tarjetas-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    /* Tarjeta individual */
+    .tarjeta {
+        background: white;
+        border-radius: 15px;
+        width: 220px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: #333;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .tarjeta:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+        background: #f5f5f5;
+        color: #e60026;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+        .tarjeta {
+            width: 80%;
+            height: 100px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1>Menú de Navegación</h1>
+
+<div class="tarjetas-container">
+    <a href="proyecto.html" class="tarjeta">Mike Mentzer</a>
+    <a href="form1.html" class="tarjeta">Heavy Duty</a>
+    <a href="form2.html" class="tarjeta">Rutina y habitos</a>
+    <a href="form3.html" class="tarjeta">Filosofia Heavy Duty</a>
+</div>
+
+</body>
+</html>
